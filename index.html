@@ -23,34 +23,38 @@
          <section class="description">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button type="submit" class="button_restaurant">
-               <span>Explorer nos restaurants</span>
-           </button>
+            <a href="#ancre_restaurant">
+               <button type="submit" class="description__button">
+                  <span>Explorer nos restaurants</span>
+               </button>
+            </a>
          </section>
+         <!--Fonctionnement-->
          <section class="functioning">
             <h2>Fonctionnement</h2>
-            <div class="functioning__choose">
+            <div class="functioning__order">
                <p>1</p>
                <i class="fa-solid fa-mobile-screen-button"></i>
                <p>Choisissez un restaurant</p>
             </div>
-            <div class="functioning__compose">
+            <div class="functioning__order">
                <p>2</p>
                <i class="fa-solid fa-list-ul"></i>
                <p>Composez votre menu</p>
             </div>
-            <div class="functioning__taste">
+            <div class="functioning__order">
                <p>3</p>
                <i class="fa-solid fa-store"></i>
                <p>Dégustez au restaurant</p>
             </div>
          </section>
+         <!--Restaurants-->
          <section class="restaurant">
-            <div class="restaurant__lapalette">
+            <div class="restaurant__carte">
                <img src="images/" alt="La palette du goût" />
-               <p>Nouveau</p>
-               <div class="description__lapalette">
-                  <div class="name_place">
+               <span>Nouveau</span>
+               <div class="restaurant__description">
+                  <div class="restaurant__description--name">
                      <h3>La palette du goût</h3>
                      <p>Ménilmontant</p>
                   </div>
@@ -58,11 +62,11 @@
                   <i class="fa-solid fa-heart"></i>
                </div>
             </div>
-            <div class="restaurant__lanote">
+            <div class="restaurant__carte">
                <img src="images/" alt="La note enchantée" />
-               <div>Nouveau</div>
-               <div class="description__lanote">
-                  <div class="name_place">
+               <span>Nouveau</span>
+               <div class="restaurant__description">
+                  <div class="restaurant__description--name">
                      <h3>La note enchantée</h3>
                      <p>Charonne</p>
                   </div>
@@ -70,10 +74,10 @@
                   <i class="fa-solid fa-heart"></i>
                </div>
             </div>
-            <div class="restaurant_lafrancaise">
+            <div class="restaurant__carte">
                <img src="images/" alt="À la française" />
-               <div class="description_lafrancaise">
-                  <div class="name_place">
+               <div class="restaurant__description">
+                  <div class="restaurant__description--name">
                      <h3>À la française</h3>
                      <p>Cité Rouge</p>
                   </div>
@@ -81,10 +85,10 @@
                   <i class="fa-solid fa-heart"></i>
                </div>
             </div>
-            <div class="restaurant_ledelice">
+            <div class="restaurant__carte">
                <img src="images/" alt="Le délice des sens" />
-               <div class="description_ledelice">
-                  <div class="name_place">
+               <div class="restaurant__description">
+                  <div class="restaurant__description--name">
                      <h3>Le délice des sens</h3>
                      <p>Folie-Méricourt</p>
                   </div>
@@ -93,6 +97,7 @@
                </div>
             </div>
          </section>
+         <!--Footer-->
          <footer>
             <img src="images/logo/ohmyfood.png" alt="Ohmyfood" />
             <div>
