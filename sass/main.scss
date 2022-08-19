@@ -4,9 +4,11 @@
 @import "./base/base";
 @import "./base/typography";
 
+@import "./components/button";
+
 @import "./layouts/footer";
 @import "./layouts/header";
 @import "./layouts/nav";
 
 @import "./pages/home";
-@import "./components/button"
+@import "./pages/restaurants";

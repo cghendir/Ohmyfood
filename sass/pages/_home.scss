@@ -129,25 +129,3 @@
         
     }
 }
-
-.carte {
-    display: flex;
-    flex-direction: column;
-    @include background-section;
-    border-radius: 50px 50px 0 0;
-    &__restaurant {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 15px;
-        h1 {
-            font-family: 'shrikhand', sans-serif;
-            font-weight: 500;
-        }
-    }
-    &__enter {
-        span {
-            text-decoration: underline $color-tertiary;
-        }
-    }
-}
