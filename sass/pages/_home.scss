@@ -1,0 +1,153 @@
+.explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include background-section;
+    p {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+}
+
+.functioning {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 40px 30px;
+    h2 {
+        margin-bottom: 30px;
+    }
+    &__order {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        margin-bottom: 25px;
+        margin-left: 13px;
+        padding: 10px 0 10px 0;
+        @include background-section;
+        box-shadow: 0px 4px 15px rgba($color: black, $alpha: 0.15);
+        transition: background-color 250ms;
+        &:hover {
+            background-color: rgba($color: $color-primary, $alpha: 0.1);
+            i {
+                color: $color-primary;
+            }
+        }
+        span {
+            border: 1px $color-primary solid;
+            border-radius: 50%;
+            width: 27px;
+            height: 27px;
+            color: white;
+            background-color: $color-primary;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -13px;
+            }
+        .fa-mobile-screen-button {
+            color: $color-icons;
+            font-size: 20px;
+            margin-right: 35px;
+        }
+        p {
+            font-weight: 600;
+        }
+        .fa-list-ul {
+            @extend .fa-mobile-screen-button;
+        }
+        .fa-store {
+            @extend .fa-mobile-screen-button;
+        }
+    }
+}
+
+.restaurant {
+    @include background-section;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    &__carte {
+        display: flex;
+        flex-direction: column;
+        height: 340px;
+        background-color: white;
+        border-radius: 25px;
+        margin-bottom: 18px;
+        position: relative;
+        box-shadow: 0px 4px 15px rgba($color: black, $alpha: 0.1);
+        img {
+            height: 74%;
+            border-radius: 20px 20px 0 0;
+            object-fit: cover;
+        }
+    }
+    &__new {
+            position: absolute;
+            background-color: $color-tertiary;
+            color: darken($color: $color-tertiary, $amount: 50);
+            border-radius: 2px;
+            right: 15px;
+            top: 15px;
+            padding: 8px 11px 5px 11px;
+            font-weight: 500;
+    }
+    &__description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 25px 4.5px 18px;
+    }
+    &__name {
+        h3 {
+            margin: 15px 0 9px 0;
+        }
+        p {
+            margin: 0 0 12px 0;
+            font-size: 18px;
+        }
+    }
+    &__heart {
+        
+            position: relative;
+            width: 31px;
+            height: 31px;
+            display: block;
+            cursor: pointer;
+            i:nth-child(2) {
+                background: linear-gradient(20deg, $color-secondary, $color-primary);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                transform: scale(0);
+                transition: transform 400ms;
+            }
+            &:hover {
+                i:nth-child(2) {
+                    transform: scale(1);
+                }
+            }
+        
+    }
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    @include background-section;
+    border-radius: 50px 50px 0 0;
+    &__restaurant {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+        h1 {
+            font-family: 'shrikhand', sans-serif;
+            font-weight: 500;
+        }
+    }
+    &__enter {
+        span {
+            text-decoration: underline $color-tertiary;
+        }
+    }
+}

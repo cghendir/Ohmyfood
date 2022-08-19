@@ -1,0 +1,3 @@
+@mixin background-section{
+    background-color: lighten($color: $background-color, $amount: 47%);
+}
