@@ -106,26 +106,26 @@
             font-size: 18px;
         }
     }
-    &__heart {
-        
-            position: relative;
-            width: 31px;
-            height: 31px;
-            display: block;
-            cursor: pointer;
-            i:nth-child(2) {
-                background: linear-gradient(20deg, $color-secondary, $color-primary);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                transform: scale(0);
-                transition: transform 400ms;
-            }
-            &:hover {
-                i:nth-child(2) {
-                    transform: scale(1);
-                }
-            }
-        
+}
+
+.favorite-heart {
+    position: relative;
+    width: 31px;
+    height: 31px;
+    display: block;
+    cursor: pointer;
+    i:nth-child(2) {
+        background: linear-gradient(20deg, $color-secondary, $color-primary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transform: scale(0);
+        transition: transform 400ms;
     }
+    &:hover {
+        i:nth-child(2) {
+            transform: scale(1);
+        }
+    }
+
 }
