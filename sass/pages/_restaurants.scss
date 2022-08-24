@@ -1,13 +1,15 @@
-img {
-    width: 100%;
-    object-fit: cover;
+.banner {
+    z-index: -1;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
+
 .carte {
     position: relative;
-    top: -50px;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    z-index: 1;
+    margin-top: -50px;
     display: flex;
     flex-direction: column;
     @include background-section;
@@ -50,4 +52,13 @@ img {
     &__padding {
         margin-bottom: 50px;
     }
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 90px;
+    }
+}
+
+.primary__button {
+    padding: 15px 50px 15px 50px;
 }
