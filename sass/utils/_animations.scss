@@ -1,0 +1,55 @@
+/*Animation de la page d'accueil*/
+.loading-spinner {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #ffff, $alpha: 0.9);
+    height: 100%;
+    animation: disappear 750ms 3s forwards;
+    &::after {
+        content: "";
+        height: 80px;
+        width: 80px;
+        border-top: 5px $color-primary solid;
+        border-right: 5px transparent solid;
+        border-radius: 50%;
+        animation: spinner 1s ease-in-out infinite;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*Animations des pages de restaurants*/
+
+@keyframes appear {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
