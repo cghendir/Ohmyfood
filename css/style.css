@@ -307,24 +307,33 @@ footer p {
   font-family: "shrikhand", sans-serif;
   font-weight: 500;
 }
-.carte__enter span {
-  border-bottom: 3px #99E2D0 solid;
-  padding-bottom: 3px;
+.carte__subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.carte__subtitle span:nth-child(2) {
+  border-top: 3px solid #99E2D0;
+  width: 40px;
+  height: 3px;
+  margin-top: 4px;
 }
 .carte__dishes {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  flex-shrink: 0;
+  flex-grow: 0;
   background-color: white;
   margin-bottom: 15px;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-  padding: 8px 20px 8px 10px;
+  overflow: hidden;
   animation: appear 1.5s;
   animation-fill-mode: both;
 }
 .carte__dishes p {
-  margin: 8px 0 5px 0;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 .carte__dishes:nth-child(1) {
   animation-delay: 150ms;
@@ -335,35 +344,51 @@ footer p {
 .carte__dishes:nth-child(3) {
   animation-delay: 450ms;
 }
-.carte__dishes:nth-child(4) {
-  animation-delay: 600ms;
+.carte__dishes:hover .carte__price {
+  margin-right: 0;
 }
-.carte__dishes:nth-child(5) {
-  animation-delay: 750ms;
+.carte__dishes:hover i {
+  animation: check-spin 0.5s ease-in-out;
 }
-.carte__dishes:nth-child(6) {
-  animation-delay: 900ms;
+.carte__price {
+  display: flex;
+  font-weight: 900;
+  align-items: flex-end;
+  margin-left: 20px;
+  margin-right: -80px;
+  min-width: 105px;
+  transition: margin-right 0.5s;
 }
-.carte__dishes:nth-child(7) {
-  animation-delay: 1050ms;
+.carte__price p {
+  padding: 0 20px 5px 0;
 }
-.carte__dishes:nth-child(8) {
-  animation-delay: 1200ms;
+.carte__check {
+  background-color: rgba(153, 226, 208, 0.9);
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.carte__dishes:nth-child(9) {
-  animation-delay: 1350ms;
+.carte__check i {
+  font-size: 23px;
+  color: white;
 }
-.carte__dishes:nth-child(10) {
-  animation-delay: 1500ms;
-}
-.carte__dishes:nth-child(11) {
-  animation-delay: 1650ms;
-}
-.carte__dishes:nth-child(12) {
-  animation-delay: 1800ms;
+.carte__name {
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 8px 0 8px 10px;
 }
 .carte__name h3 {
   margin: 5px 0 5px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte__name p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .carte__padding {
   margin-bottom: 50px;
@@ -391,7 +416,7 @@ footer p {
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
   height: 100%;
-  animation: disappear 750ms 3s forwards;
+  animation: disappear 750ms 3s forwards, disappear-scale 0s 3.5s forwards;
 }
 .loading-spinner::after {
   content: "";
@@ -404,6 +429,14 @@ footer p {
 }
 
 @keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes disappear-scale {
   0% {
     transform: scale(1);
   }
@@ -428,6 +461,14 @@ footer p {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@keyframes check-spin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
