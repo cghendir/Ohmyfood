@@ -440,10 +440,6 @@ footer p {
   margin-bottom: 90px;
 }
 
-.primary__button {
-  padding: 15px 50px 15px 50px;
-}
-
 .several__dishes:nth-child(1) {
   animation-delay: 150ms;
 }
@@ -462,7 +458,6 @@ footer p {
 }
 
 /*Animation de la page d'accueil*/
-
 .loading-spinner {
   position: fixed;
   display: flex;
