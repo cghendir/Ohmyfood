@@ -3,13 +3,14 @@
     img {
         width: 100%;
         object-fit: cover;
+        height: 500px;
     }
 }
 
 .carte {
     position: relative;
     z-index: 1;
-    margin-top: -50px;
+    margin-top: -100px;
     display: flex;
     flex-direction: column;
     @include background-section;
@@ -91,13 +92,6 @@
             font-size: 23px;
             color: white;
         }
-        animation: appear 1.5s;
-        animation-fill-mode: both;
-        @for $i from 1 through 12 {
-            &:nth-child(#{$i}) {
-                animation-delay: 150ms * $i;
-            }
-        }
     }
     &__name {
         width: 80%;
@@ -106,7 +100,7 @@
         overflow: hidden;
         h3 {
             margin: 5px 0 5px 0;
-            white-space: nowrap;
+            white-space: normal;
             text-overflow: ellipsis;
         }
         p {
@@ -122,6 +116,14 @@
         display: flex;
         justify-content: center;
         margin-bottom: 90px;
+    }
+}
+
+.several__dishes {
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+            animation-delay: 150ms * $i;
+        }
     }
 }
 

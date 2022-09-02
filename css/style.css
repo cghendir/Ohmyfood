@@ -326,12 +326,17 @@ footer p {
 .banner img {
   width: 100%;
   object-fit: cover;
+  height: 500px;
 }
 
 .carte {
   position: relative;
   z-index: 1;
+<<<<<<< HEAD
   margin-top: -50px;
+=======
+  margin-top: -100px;
+>>>>>>> dev
   display: flex;
   flex-direction: column;
   background-color: #f8f8f8;
@@ -368,7 +373,11 @@ footer p {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 <<<<<<< HEAD
+<<<<<<< HEAD
   padding: 8px 20px 8px 10px;
+=======
+  overflow: hidden;
+>>>>>>> dev
 =======
   overflow: hidden;
 >>>>>>> dev
@@ -424,6 +433,7 @@ footer p {
   text-overflow: ellipsis;
   overflow: hidden;
   padding: 8px 0 8px 10px;
+<<<<<<< HEAD
 }
 .carte__dishes:nth-child(1) {
   animation-delay: 150ms;
@@ -464,6 +474,12 @@ footer p {
 .carte__name h3 {
   margin: 5px 0 5px 0;
   white-space: nowrap;
+=======
+}
+.carte__name h3 {
+  margin: 5px 0 5px 0;
+  white-space: normal;
+>>>>>>> dev
   text-overflow: ellipsis;
 }
 .carte__name p {
@@ -479,6 +495,7 @@ footer p {
   margin-bottom: 90px;
 }
 
+<<<<<<< HEAD
 .primary__button {
   padding: 15px 50px 15px 50px;
 }
@@ -486,6 +503,26 @@ footer p {
 /*Animation de la page d'accueil*/
 
 =======
+
+/*Animation de la page d'accueil*/
+>>>>>>> dev
+=======
+.several__dishes:nth-child(1) {
+  animation-delay: 150ms;
+}
+.several__dishes:nth-child(2) {
+  animation-delay: 300ms;
+}
+.several__dishes:nth-child(3) {
+  animation-delay: 450ms;
+}
+.several__dishes:nth-child(4) {
+  animation-delay: 600ms;
+}
+
+.primary__button {
+  padding: 15px 50px 15px 50px;
+}
 
 /*Animation de la page d'accueil*/
 >>>>>>> dev
@@ -502,7 +539,11 @@ footer p {
   background-color: rgba(255, 255, 255, 0.9);
   height: 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   animation: disappear 750ms 3s forwards;
+=======
+  animation: disappear 750ms 3s forwards, disappear-scale 0s 3.5s forwards;
+>>>>>>> dev
 =======
   animation: disappear 750ms 3s forwards, disappear-scale 0s 3.5s forwards;
 >>>>>>> dev
@@ -520,7 +561,10 @@ footer p {
 @keyframes disappear {
   0% {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> dev
     opacity: 1;
   }
   100% {
@@ -529,6 +573,9 @@ footer p {
 }
 @keyframes disappear-scale {
   0% {
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
     transform: scale(1);
   }
@@ -556,7 +603,10 @@ footer p {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> dev
 @keyframes check-spin {
   0% {
     transform: rotate(-270deg);
@@ -565,6 +615,9 @@ footer p {
     transform: rotate(0deg);
   }
 }
+<<<<<<< HEAD
+>>>>>>> dev
+=======
 >>>>>>> dev
 
 /*# sourceMappingURL=style.css.map */
