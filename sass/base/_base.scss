@@ -1,5 +1,9 @@
 .container {
     width: 100%;
+    @include tablet-only {
+        max-width: 1980px;
+        margin: auto;
+    }
 }
 
 * {

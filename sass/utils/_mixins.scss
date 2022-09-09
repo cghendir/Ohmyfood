@@ -1,3 +1,15 @@
 @mixin background-section{
     background-color: lighten($color: $background-color, $amount: 47%);
 }
+
+@mixin tablet-only{
+    @media screen and (min-width: map-get($breakpoints, medium)) {
+        @content
+    }
+}
+
+@mixin desktop-only{
+    @media screen and (min-width: map-get($breakpoints, large)) {
+        @content
+    }
+}
