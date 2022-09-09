@@ -4,6 +4,9 @@
         width: 100%;
         object-fit: cover;
         height: 500px;
+        @include desktop-only {
+            height: 660px;
+        }
     }
 }
 
@@ -23,6 +26,43 @@
         h1 {
             font-family: 'shrikhand', sans-serif;
             font-weight: 500;
+        }
+    }
+    &__platter {
+        @include desktop-only {
+            display: flex;
+            justify-content: space-between;
+        }
+        &--tablet {
+            @include tablet-only {
+                display: flex;
+                justify-content: space-between;
+            }
+            @include desktop-only {
+                width: 66%;
+            }
+        }
+        &--dessert {
+            @include tablet-only {
+                display: flex;
+                justify-content: center;
+            }
+            @include desktop-only {
+                width: 33%;
+            }
+        }
+    }
+    &__category {
+        @include tablet-only {
+            width: 48%;
+        }
+        @include desktop-only {
+            width: 49%;
+        }
+    }
+    &__dessert {
+        @include desktop-only {
+            width: 100%;
         }
     }
     &__subtitle {
@@ -55,6 +95,13 @@
         }
         animation: appear 1.5s;
         animation-fill-mode: both;
+        &--4 {
+            @for $i from 1 through 4 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 150ms * $i;
+                }
+            }
+        }
         @for $i from 1 through 3 {
             &:nth-child(#{$i}) {
                 animation-delay: 150ms * $i;
@@ -100,14 +147,15 @@
         overflow: hidden;
         h3 {
             margin: 5px 0 5px 0;
-            white-space: normal;
+            white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
         }
         p {
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        padding: 8px 0 8px 10px;
+        padding: 10px 0 10px 10px;
     }
     &__padding {
         margin-bottom: 50px;
@@ -116,17 +164,12 @@
         display: flex;
         justify-content: center;
         margin-bottom: 90px;
-    }
-}
-
-.several__dishes {
-    @for $i from 1 through 4 {
-        &:nth-child(#{$i}) {
-            animation-delay: 150ms * $i;
+        @include desktop-only {
+            margin-bottom: 35px;
         }
     }
+    .primary__button {
+        padding: 15px 50px 15px 50px;
+    }
 }
 
-.primary__button {
-    padding: 15px 50px 15px 50px;
-}

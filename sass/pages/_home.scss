@@ -46,8 +46,9 @@
     align-items: center;
     @include background-section;
     p {
-        font-size: 18px;
+        font-size: 22px;
         padding-bottom: 15px;
+        color: lighten($color: $background-color, $amount: 5);
     }
 }
 
@@ -57,6 +58,12 @@
     padding: 30px 30px 40px 30px;
     h2 {
         margin-bottom: 30px;
+    }
+    &__carte {
+        @include tablet-only {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &__order {
         display: flex;
@@ -105,7 +112,7 @@
             margin-left: -13px;
             }
         .fa-mobile-screen-button {
-            color: $color-icons;
+            color: $color-icons;    
             font-size: 20px;
             margin-right: 35px;
         }
@@ -117,6 +124,10 @@
         }
         .fa-store {
             @extend .fa-mobile-screen-button;
+        }
+        @include tablet-only {
+            width: 31%;
+            margin-bottom: 0
         }
     }
 }
@@ -136,8 +147,23 @@
         box-shadow: 0px 4px 15px rgba($color: black, $alpha: 0.1);
         img {
             height: 74%;
+            width: 100%;
             border-radius: 20px 20px 0 0;
             object-fit: cover;
+        }
+        @include tablet-only {
+            margin-bottom: 40px;
+        }
+        &--media {
+            @include tablet-only {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &--peer {
+            @include tablet-only {
+                width: 48%;
+            }
         }
     }
     &__new {
@@ -165,26 +191,4 @@
             font-size: 18px;
         }
     }
-}
-
-.favorite-heart {
-    position: relative;
-    width: 31px;
-    height: 31px;
-    display: block;
-    cursor: pointer;
-    i:nth-child(2) {
-        background: linear-gradient(20deg, $color-secondary, $color-primary);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        transform: scale(0);
-        transition: transform 400ms;
-    }
-    &:hover {
-        i:nth-child(2) {
-            transform: scale(1);
-        }
-    }
-
 }
