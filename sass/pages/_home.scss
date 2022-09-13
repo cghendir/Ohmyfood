@@ -150,9 +150,13 @@
             width: 100%;
             border-radius: 20px 20px 0 0;
             object-fit: cover;
+            @include tablet-only {
+                height: 77%;
+            }
         }
         @include tablet-only {
             margin-bottom: 40px;
+            height: 400px;
         }
         &--media {
             @include tablet-only {
