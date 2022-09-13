@@ -125,7 +125,7 @@ footer p {
 .header__logo {
   font-size: 35px;
   height: auto;
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: center;
   width: 100%;
