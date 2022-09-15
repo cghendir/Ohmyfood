@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    min-width: 230px;
     @include tablet-only {
         max-width: 1980px;
         margin: auto;
@@ -11,10 +12,10 @@
 }
 
 .padding--md {
-    padding: 20px 80px 70px 80px;
+    padding: 20px 45px 70px 45px;
     text-align: center;
 }
 
 .padding--sm {
-    padding: 0 30px 0 30px;
+    padding: 0 15px 0 15px;
 }

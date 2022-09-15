@@ -3,7 +3,7 @@
     img {
         width: 100%;
         object-fit: cover;
-        height: 500px;
+        height: 450px;
         @include desktop-only {
             height: 660px;
         }
@@ -13,7 +13,7 @@
 .carte {
     position: relative;
     z-index: 1;
-    margin-top: -100px;
+    margin-top: -50px;
     display: flex;
     flex-direction: column;
     @include background-section;
@@ -22,7 +22,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 0 25px 0;
+        padding: 20px 0 25px 0;
         h1 {
             font-family: 'shrikhand', sans-serif;
             font-weight: 500;
@@ -78,7 +78,7 @@
             }
         }
     }
-
+    
     &__dishes {
         display: flex;
         justify-content: space-between;
@@ -102,9 +102,11 @@
                 }
             }
         }
-        @for $i from 1 through 3 {
-            &:nth-child(#{$i}) {
-                animation-delay: 150ms * $i;
+        &--3 {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 150ms * $i;
+                }
             }
         }
         &:hover {
@@ -156,6 +158,7 @@
             overflow: hidden;
         }
         padding: 10px 0 10px 10px;
+        flex: 1;
     }
     &__padding {
         margin-bottom: 50px;

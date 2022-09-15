@@ -10,7 +10,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba($color: #ffff, $alpha: 0.9);
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
     height: 100%;
     animation: disappear 750ms 3s forwards, disappear-scale 0s 3.5s forwards;
     &::after {
@@ -70,7 +70,7 @@
             transform: scale(1.1);
         }
     }
-
+    
 }
 
 /*Animations des pages de restaurants*/
