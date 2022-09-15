@@ -9,24 +9,24 @@ utilisateurs de composer leur propre menu et réduire leur temps d’attente dan
 restaurants car leur menu est préparé à l’avance. Plus de perte de temps à consulter la carte
 !
 
-##Proposition
+## Proposition
 
 Nous souhaitons proposer à nos clients les menus de restaurants gastronomiques.
 Développé à New-York dans un premier temps, nous souhaitons désormais élargir notre
 concept à la capitale de la gastronomie : Paris.
 
-##Positionnement
+## Positionnement
 
 Nous nous positionnons sur un marché de niche, avec les restaurants luxueux des villes
 dans lesquelles nous sommes établis. Nous souhaitons être identifiés comme une
 entreprise proposant des services haut de gamme.
 
-##Cible
+## Cible
 
 Classes moyennes et supérieures, connectées et souvent pressées, souhaitant déguster des
 produits de qualité.
 
-##Problématique
+## Problématique
 
 Nous souhaitons ouvrir nos services à la capitale française.
 
