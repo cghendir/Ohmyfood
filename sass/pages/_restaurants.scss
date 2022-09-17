@@ -3,7 +3,7 @@
     img {
         width: 100%;
         object-fit: cover;
-        height: 450px;
+        height: 300px;
         @include desktop-only {
             height: 660px;
         }
