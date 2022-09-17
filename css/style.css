@@ -326,7 +326,7 @@ footer p {
 .banner img {
   width: 100%;
   object-fit: cover;
-  height: 450px;
+  height: 300px;
 }
 @media screen and (min-width: 1280px) {
   .banner img {
